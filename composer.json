@@ -1,0 +1,29 @@
+{
+    "name": "petiar/booksearch",
+    "description": "Search the whole world for your favourite book!",
+    "type": "library",
+    "license": "GPL",
+    "autoload": {
+        "psr-4": {
+            "Petiar\\Booksearch\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Petiar\\Tests\\": "tests/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Peter Lachky",
+            "email": "petiar@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "php": ">=8",
+        "symfony/http-client": "6.2.x-dev",
+        "twig/twig": "^2.0",
+        "phpunit/phpunit": "10.0.x-dev"
+    }
+}

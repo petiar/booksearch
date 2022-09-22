@@ -1,0 +1,29 @@
+<html lang="en">
+<head>
+<title>Bookshop search</title>
+</head>
+<body>
+<table>
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Price</th>
+            <th>Currency</th>
+            <th>Language</th>
+            <th>Bookshop Name</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for book in results %}
+            <tr>
+                <td>{{ book.name }}</td>
+                <td>{{ book.price }}</td>
+                <td>{{ book.currency }}</td>
+                <td>{{ book.language }}</td>
+                <td>{{ book.bookshop }}</td>
+            </tr>
+        {% endfor %}
+    </tbody>
+</table>
+</body>
+</html>
